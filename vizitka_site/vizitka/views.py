@@ -13,3 +13,7 @@ def index(request):
 
 def about(request):
     return render(request, 'vizitka/about.html')
+
+
+def works(request):
+    return render(request, 'vizitka/works.html')
