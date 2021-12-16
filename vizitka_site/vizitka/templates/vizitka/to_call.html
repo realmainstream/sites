@@ -1,0 +1,17 @@
+{% extends 'vizitka/base.html' %}
+
+{% block title %}
+{{ name }}
+{% endblock %}
+
+{% block content %}
+<h1>Заказать звонок</h1>
+<form method="post">
+  {% csrf_token %}
+  {{ form.name }}<br>
+  {{ form.task }}<br>
+  <button type="submit" class="btn btn-success">Заказать звонок</button>
+  <span>{{error}}</span>
+  </form>
+
+{% endblock %}
